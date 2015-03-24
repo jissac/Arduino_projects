@@ -38,14 +38,14 @@ void loop(){
     digitalWrite(4, LOW);
     } 
   
-  // Turn on two LEDs for low temperatures 
+  // Turn on two LEDs for medium temperatures 
   else if (temperature >= baselineTemp+4 && 
               temperature < baselineTemp+6) {
     digitalWrite(2, HIGH);
     digitalWrite(3, HIGH);
     digitalWrite(4, LOW);
               }
-  // Turn on all three LEDs for low temperatures
+  // Turn on all three LEDs for high temperatures
   else if (temperature >= baselineTemp+6) {
     digitalWrite(2, HIGH);
     digitalWrite(3, HIGH);
